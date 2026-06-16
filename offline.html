@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Offline - The Dashboard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: #1a1f2e;
+      color: #f8fafc;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .container {
+      text-align: center;
+      max-width: 320px;
+    }
+    .icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 24px;
+      opacity: 0.6;
+    }
+    h1 {
+      font-family: 'Space Grotesk', system-ui, sans-serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    p {
+      color: #94a3b8;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .retry {
+      margin-top: 32px;
+      padding: 12px 24px;
+      background: #5bb5d5;
+      color: #0c1821;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .retry:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <path d="M3 15a4 4 0 0 0 4 4h9a5 5 0 0 0 .5-9.97A7.5 7.5 0 0 0 6.09 9.91" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="2" y1="2" x2="22" y2="22" stroke-linecap="round"/>
+    </svg>
+    <h1>You're offline</h1>
+    <p>Your Dashboard will load when you're back online. Take a moment to breathe.</p>
+    <button class="retry" onclick="window.location.reload()">Try again</button>
+  </div>
+</body>
+</html>
